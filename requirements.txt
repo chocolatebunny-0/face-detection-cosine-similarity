@@ -1,0 +1,7 @@
+keras_vggface
+scipy
+matplotlib
+numpy
+mtcnn
+tensorflow
+keras_applications

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>File Upload</title>
+  </head>
+  <body>
+    <h1>Upload files to detect faces</h1>
+    <form method="POST" action="/home" enctype="multipart/form-data">
+      <p>File one: <input type="file" name="file_one"></p>
+      <p>File two: <input type="file" name="file_two"></p>
+      <p><input type="submit" value="Submit"></p>
+    </form>
+
+    <h4>faces</h4>
+
+    {% for i, face_img in enumerate(faces) %}
+      <div> {{ face_img | safe }} </div>
+      {% if (i+1)%2 == 0 %}
+         <br>
+         <hr>
+      {% endif %}
+    {% endfor %}
+  </body>
+</html>
