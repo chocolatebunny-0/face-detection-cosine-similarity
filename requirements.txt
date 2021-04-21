@@ -1,4 +1,5 @@
 gunicorn
+flask
 keras_vggface
 scipy
 matplotlib
