@@ -6,3 +6,4 @@ matplotlib
 numpy
 mtcnn
 keras_applications
+opencv-python
