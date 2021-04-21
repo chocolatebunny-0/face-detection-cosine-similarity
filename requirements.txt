@@ -1,4 +1,4 @@
-guincorn
+gunicorn
 keras_vggface
 scipy
 matplotlib
