@@ -12,7 +12,7 @@ from matplotlib.patches import Rectangle
 from numpy import asarray
 from PIL import Image
 
-import tensorflow as tf
+# import tensorflow as tf
 
 
 # Get images from an external server and store it locally
@@ -70,7 +70,7 @@ def extract_face_from_image(image_path, required_size=(224, 224)):
         face_imgobj.append(face_image)
     
     # return face_images
-    
+
     return face_images, face_imgobj
 
 def get_model_scores(faces):
